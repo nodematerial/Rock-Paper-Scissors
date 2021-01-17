@@ -20,6 +20,26 @@ Santa2020とdeadlineが同じ...
 銀　上位74
 銅　上位148
 
-ワンちゃん銅メダルの気持ちで、そこまで熱心にやるつもりはない。
+one-chance 銅メダルの気持ちで、そこまで熱心にやるつもりはない。
 
-### 1/17
+### 1/16
+geometryカーネルと、np.randomを混ぜたエージェントを作成した。randomを選択する確率も乱数によって決定づけられている。閾値を0.2~0.6に変化させて、動向を確認した。
+Notebook name: rock_paper_scissors_geometry_random
+
+| ランダム率 | 名前 | スコア |
+|----|----|----|
+|0.2|commit1|560|
+|0.3|commit2|820|
+|0.4|commit3|440|
+|0.5|commit4|610|
+|0.6|中止|中止|
+
+当たり前だが、簡単に1000付近には到達しない。次にgeometryカーネルと、last_opponent_killを混ぜたエージェントを作成した。また、ランダム率の幅も狭くした(同時に変えるのは本来は好ましくないが、まあまだ実験序盤だしいいかな)
+Notebook name:rock_paper_scissors_geometry_last_opp_kill
+
+| ランダム率 | 名前 | スコア |
+|----|----|----|
+|0.26|commit1||
+|0.28|commit2||
+|0.32|commit4||
+|0.34|commit5||
