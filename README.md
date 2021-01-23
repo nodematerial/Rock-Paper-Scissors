@@ -79,8 +79,17 @@ Notebook name:rock_paper_scissors_geometry_last_opp_kill
 とりあえず係数を増やす!!!
 | alpha | 名前 | スコア |
 |----|----|----|
-|0.07|version7||
-|0.08|version8||
-|0.09|version9||
-|0.10|version10||
+|0.07|version7|750|
+|0.08|version8|770|
+|0.09|version9|680|
+|0.10|version10|755|
 
+### 1/23
+微妙いな...0.05,0.06が強そうなので、その当たりで振動させる?????
+| alpha | 名前 | スコア |
+|----|----|----|
+|0.052|version11|820|
+|0.054|version12|820|
+|0.056|version13|780|
+|0.058|version14|715|
+|0.06(二回目)|version15|660|
