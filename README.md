@@ -23,6 +23,7 @@ Santa2020とdeadlineが同じ...
 one-chance 銅メダルの気持ちで、そこまで熱心にやるつもりはない。
 
 ### 1/16
+***
 geometryカーネルと、np.randomを混ぜたエージェントを作成した。randomを選択する確率も乱数によって決定づけられている。閾値を0.2~0.6に変化させて、動向を確認した。
 Notebook name: rock_paper_scissors_geometry_random
 
@@ -85,6 +86,7 @@ Notebook name:rock_paper_scissors_geometry_last_opp_kill
 |0.10|version10|755|
 
 ### 1/23
+***
 微妙いな...0.05,0.06が強そうなので、その当たりで振動させる?????
 | alpha | 名前 | スコア |
 |----|----|----|
@@ -95,13 +97,16 @@ Notebook name:rock_paper_scissors_geometry_last_opp_kill
 |0.06(二回目)|version15|660|
 
 ### 1/24
+***
 Cassavaのモデリングがうまく行かなくて辛い
 ジャンケンはあきらめて、とりあえずversion6を大量提出する(運ゲー)。
 
 ### 1/26
+***
 今の所メダルは無理そう。放置して運勝ちを狙うしかない。
 
 ### 1/27
+***
 もととなってるカーネルの解説がdiscissionに存在した。
 https://www.kaggle.com/c/rock-paper-scissors/discussion/210305
 また、RPS Dojo(道場)という、良い実験ノートブックを発見した。
@@ -115,7 +120,7 @@ version1&version2 : bumblepuppy
 単純にいえば、混ぜる。複数のエージェントを裏で戦わせて、
 
 ### 1/28
-
+***
 1/27と1/28の分
 とても時間かかったけど、3つ混ぜた、人生厳しい
 mixing ver6,7
@@ -136,7 +141,7 @@ mixing2 ver 1,2,4
 解決策としては、決められた周期でlistをresetという策が考えられる。そうすれば、今現在の対戦結果に従って、エージェントを選出することができる。この周期は色々考えられるが、とりあえず、50と75と100で行ってみる。それぞれ二回試す→明日
 
 ### 1/29
-
+***
 Dojoでトレーニングしたら、クソ弱かった。50,100当たりではリセットが早すぎたか?
 とりあえず、200,250,300で再チャレンジ→これもDojoでクソ弱い
 
@@ -150,6 +155,7 @@ mixing3:ver1 強そう
 mixing3:ver10 弱そう
 mixing3:ver11 弱そう
 ### 1/30
+***
 200 version12
 250 version13
 300 version14
@@ -161,11 +167,29 @@ mixing3:ver11 弱そう
 250 version16 弱い
 
 ### 1/31
+***
 やばい、手が尽きた...と思ったが、この方法なら、recent_をかなり小さい値にしても大丈夫なのでは？ということで、早く反応できるように、小さめの数字も試す。運が絡まない程度に大きく、素早く反応できる程度に小さいrecent_を見つけないといけないのだが...果たして
-Dojoで試すと、(Dojo回すのに一時間半かかるんだよなあ...)
+Dojoで試すと、強くなさそう、というか2つ混ぜたプログラムのほうが強そうなので、geometry&bundle＋直近抜き出しのプログラムで勝負
+|recent_|version|score|
+|----|----|----|
+|20|version15|
+|25|version16|
+|30|version17|
+|35|version18|
+|40|version19|
+ver19が少し強そう。
+### 2/1
+***
+dlluは混ぜたほうが良いか?
 
-20 version17
-40 version18
-60 version19
-80 version20
+|recent_|version|score|
+|----|----|----|
+|20|version20|
+|25|version21|
+|30|version22|
+|35|version23|
+|40|version24|
 
+### 2/2
+***
+終了、歯が立たなかった。
